@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>HTML</title>
+
+              <!-- add icon link -->
+        <link rel = "icon" href="icon.jpeg" type = "image/x-icon">
+
+ </head>
+  <body>
+  	<h1 id="inicio">Primeiros passos com HTML</h1>
+  	<hr>
+
+	  	<p><strong>HTML</strong> (<i>HyperText Markup Language</i>) é uma linguagem de marcação utilizada para estruturar e apresentar o conteúdo em uma página da web. É a base fundamental de qualquer página da web e é interpretada pelos navegadores para exibir o conteúdo de forma visual.</p>
+
+		<p>HTML utiliza uma sintaxe composta por elementos <strong>(tags)</strong> que são inseridos no código para indicar a estrutura e o significado dos diferentes elementos de uma página web. Cada tag é delimitada por <strong>"<" e ">"</strong> e pode conter atributos para fornecer informações adicionais sobre o elemento. Os elementos HTML descrevem a estrutura lógica de uma página, como títulos, parágrafos, links, imagens, tabelas e formulários. Esses elementos permitem organizar e apresentar o conteúdo de forma hierárquica e interativa.</p>
+
+		<p>Além disso, o HTML também oferece suporte para estilização básica por meio de atributos embutidos, como cores, tamanhos de fonte e estilos de texto. No entanto, para estilos mais avançados, é comum utilizar o CSS (Cascading Style Sheets) em conjunto com o HTML. Em resumo, o HTML é a linguagem básica para estruturar e organizar o conteúdo de uma página da web, definindo os elementos e suas relações, permitindo que os navegadores interpretem e exibam o conteúdo de forma adequada aos usuários.</p>
+
+	<h2>Índice</h2>
+	<ul>
+		<li><a href="#comunicação">Comunicação Cliente X Server</a></li>
+		<li><a href="#conceitos">HTML I: Conceitos Básicos</a></li>
+		<li><a href="#introducao">Introdução ao HTML na prática</a></li>
+		
+
+	</ul>
+
+	<h2 id="comunicação">Comunicação Cliente X Servidor</h2>
+		<p>	A comunicação entre um cliente e um servidor é um processo fundamental na troca de informações em muitas aplicações de rede. Essa comunicação geralmente ocorre usando um modelo de solicitação-resposta, no qual o cliente envia uma solicitação ao servidor e o servidor responde com os dados solicitados ou uma confirmação do sucesso da operação.</p>
+		<p>	Ao trabalhar com desenvolvimento web, a comunicação cliente-servidor é fundamental para a troca de informações entre um navegador (cliente) e um servidor web. Aqui está uma explicação mais detalhada de como ocorre essa comunicação específica para o desenvolvimento web:</p>
+		<p>Requisição HTTP: O cliente, geralmente um navegador, inicia a comunicação enviando uma solicitação HTTP (Hypertext Transfer Protocol) para o servidor. Essa solicitação contém informações como o método HTTP (por exemplo, GET, POST, PUT, DELETE) que define a ação a ser executada no servidor, o URL do recurso desejado e os cabeçalhos HTTP opcionais que fornecem informações adicionais sobre a requisição.</p>
+		<p>	Roteamento no servidor: O servidor web recebe a requisição HTTP e a roteia para o destino apropriado dentro do aplicativo web. Isso geralmente envolve o uso de rotas definidas no servidor para mapear o URL da requisição para o código correspondente no servidor.</p>
+		<p>Processamento da requisição: O servidor executa o código apropriado para lidar com a requisição. Isso pode envolver a recuperação de dados do banco de dados, processamento de formulários, autenticação do usuário, geração de conteúdo dinâmico, etc. O servidor pode usar várias tecnologias e linguagens de programação, como PHP, Python, Ruby, Java, Node.js, para processar a requisição.</p>
+		<p>	Acesso a recursos: Durante o processamento da requisição, o servidor pode precisar acessar recursos, como bancos de dados ou sistemas de arquivos, para obter ou manipular dados. Isso é feito usando consultas ou chamadas de API adequadas.</p>
+		<p>Geração da resposta: Com base na requisição e nas ações realizadas, o servidor gera uma resposta HTTP. A resposta inclui um código de status HTTP que indica o resultado da solicitação (por exemplo, 200 para sucesso, 404 para recurso não encontrado, 500 para erro do servidor) e um corpo que contém os dados ou conteúdo da resposta.</p>
+		<p>	Envio da resposta: O servidor envia a resposta HTTP de volta ao cliente, geralmente no formato de texto. A resposta é enviada usando o protocolo HTTP e inclui os cabeçalhos relevantes, como Content-Type (tipo de conteúdo), Content-Length (tamanho do conteúdo) e outros cabeçalhos opcionais.</p>	
+		<p>Processamento da resposta no cliente: O cliente, que é o navegador, recebe a resposta HTTP e processa-a de acordo. Ele interpreta os cabeçalhos para entender o tipo de conteúdo recebido e exibe o conteúdo na interface do usuário do navegador. Dependendo do tipo de resposta, o navegador pode exibir HTML, CSS, JavaScript, imagens, arquivos de download, etc.</p>	
+		<p>Interação adicional: O processo pode envolver interações adicionais entre o cliente e o servidor, onde o cliente pode enviar mais solicitações para buscar recursos adicionais, enviar formulários, fazer atualizações em tempo real usando tecnologias como WebSockets ou AJAX, entre outros.</p>
+		<p>Encerramento da conexão: Após a troca de informações, a conexão é encerrada pelo cliente ou pelo servidor, liberando recursos e permitindo que o cliente acesse outros recursos ou envie solicitações para outros servidores.</p>
+		<small><a href="#inicio">(voltar)</a></small>
+
+	<h2 id="conceitos">HTML I: Conceitos Básicos</h2>
+		<p>Uma <strong>tag</strong> em HTML é um elemento fundamental usado para marcar e definir diferentes partes de uma página web.</p> 
+		<p>As tags são representadas por meio de palavras-chave ou códigos delimitados por caracteres <strong>"<" e ">"</strong>.As tags são usadas para definir a estrutura e o significado dos elementos na página, como títulos, parágrafos, links, imagens, tabelas, formulários e muitos outros. Cada tag tem uma função específica e indica ao navegador como exibir e interpretar o conteúdo.</p> 
+
+		<p>Existem dois tipos principais de tags em HTML:</p>
+
+		<p>Tags de abertura e fechamento: São compostas por uma tag de abertura ("<nome>") e uma tag de fechamento ("</nome>"). O conteúdo a ser marcado é colocado entre as tags de abertura e fechamento.</p>
+		
+
+		<p>Os principais elementos do HTML
+		<p><strong>Tag HTML</strong></p>
+		<p>A tag html faz parte da estrutura básica do documento, esta tag deve ser colocada no início do código do documento e é usada para indicar ao navegador que se trata de um documento HTML, já que os navegadores poderão ler outros tipos de documentos.</p>
+
+		<p><strong>Tag head</strong></p>
+		<p>A tag head faz parte da estrutura básica do documento, sua finalidade é definir o cabeçalho do documento com informações que não serão exibidas dentro do conteúdo da página.</p>
+
+		<p><strong>Tag body</strong></p>
+		<p>A tag body faz parte da estrutura básica do documento, sua finalidade é definir o corpo do documento, ou seja, tudo que estiver dentro da tag body será mostrado de alguma forma no conteúdo da página.</p>
+
+		<p><strong>Parágrafo &#60;p&#62;</strong></p>
+		<p>A tag &#60;p&#62;deve ser aberta e fechada para definir um parágrafo.</p>
+		<img src="paragrafo.png">
+
+		<p><strong>Cabeçalho</strong></p>
+		<p>As heading tags, ou tags de cabeçalho, ajudam a criar uma hierarquia entre as partes do texto, separando-o em seções. O &#60;h1&#62; é o cabeçalho de maior relevância, seguido pelo &#60;h2&#62;, &#60;h3&#62; e assim sucessivamente até o &#60;h6&#62;, de menor importância.</p>
+		<img src="cabecalho.png">
+
+		<p><strong>Tag (&#60;img&#62;)</strong></p>
+		<p>A tag de imagem não precisa ser fechada, já que o seu conteúdo é definido na própria tag com o atributo “src”.</p>
+		<img src="imagem.png">	
+
+		<p><strong>Âncora (&#60;a&#62;) </strong></p>
+		<p>A tag de âncora define um link para outra página. O atributo “href” determina o destino desse link.</p>
+		<img src="ancora.png">
+
+		<p><strong>Lista ordenada (&#60;ol&#62;)</strong></p>
+		<p>Uma ordered list, ou lista ordenada, é exibida com elementos numerados. Cada elemento deve ser marcado com a tag &#60;li&#62; (list item).</p>
+		<img src="list-ordenadas.png">
+
+
+		<p><strong>ÂLista não ordenada (&#60;ul&#62;)</strong></p>
+		<p>A tag unordered list, ou lista não ordenada, mostra os elementos como bulletpoints.</p>
+		<img src="list-nordenadas.png">
+		<br>
+
+		<small><a href="#inicio">(voltar)</a></small>
+
+	<h2 id="introducao">Introdução ao HTML na prática</h2>
+		<p>Estrutura básica do documento:</p>
+		<img src="index_basico.png">
+
+		<p>O código acima define a estrutura básica de um documento HTML.</p>
+		
+		<p>Aqui está uma descrição de cada elemento:</p>
+
+		<p><strong>&#60;!DOCTYPE html&#62;</strong>: Declaração que define a versão do HTML utilizada no documento. No caso acima, html indica que estamos usando a versão HTML5.</p>
+		<p><strong>&#60;html&#62;</strong>: Elemento raiz do documento HTML.</p>
+		<p><strong>&#60;head&#62;</strong>: Elemento que contém metadados e informações sobre a página, como o título exibido na aba do navegador.</p>
+		<p><strong>&#60;title&#62;</strong>: Elemento que define o título da página, que é exibido na aba do navegador ou na barra de título da janela.</p>
+		<p><strong>&#60;body&#62;</strong>: Elemento que contém o conteúdo visível da página, como texto, imagens, links, etc.</p>
+		<p>Dentro do elemento <strong>&#60;body&#62;</strong>, você pode adicionar o conteúdo da página, como parágrafos, cabeçalhos, imagens, links e outros elementos HTML
+		Essa é a estrutura básica de um documento HTML, e você pode adicionar mais elementos e estilos para personalizar e estruturar sua página da maneira desejada.</p>
+
+		<small><a href="#inicio">(voltar)</a></small>
+<hr>
+
+		<h3>Referências</h3>
+		<a href="https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021">THOUGHTCO<a>
+		<br>
+		<a href="https://rockcontent.com/br/blog/html/">ROCKCONTENT<a>
+		<br>
+		<a href="https://www.w3schools.com/html/default.asp">W3SCHOOLS<a>
+		<br>
+		<small><a href="#inicio">(voltar)</a></small>
+
+</body>
+</html>
